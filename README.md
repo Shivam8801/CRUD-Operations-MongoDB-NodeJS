@@ -8,7 +8,7 @@ In order to use this app, user should install following modules on terminal(I ha
 2) npm install -g nodemon
 3) npm install mongoose
 
-There are 4 localhost calls on postman which are as follows:
+There are 4 localhost calls on postman which are as follows.
 for New Entry:(POST request on postman)
 1) http://localhost:3000/tasks/
 

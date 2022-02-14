@@ -9,14 +9,16 @@ In order to use this app, user should install following modules on terminal(I ha
 3) npm install mongoose
 
 There are 4 localhost calls on postman which are as follows.
+
+
 for New Entry:(POST request on postman)
-1) http://localhost:3000/tasks/
+1. http://localhost:3000/tasks/
 
 for Reading any Entry:(GET request on postman)
-2) http://localhost:3000/tasks/id
+2. http://localhost:3000/tasks/id
 
 for Updating Entry:(PATCH request on postman)
-3) http://localhost:3000/tasks/id with the JSON data updations
+3. http://localhost:3000/tasks/id with the JSON data updations
 
 for Deleting Entry:(DELETE request on postman)
-4) http://localhost:3000/tasks/id 
+4. http://localhost:3000/tasks/id 

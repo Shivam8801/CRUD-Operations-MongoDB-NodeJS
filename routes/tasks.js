@@ -1,5 +1,6 @@
 const express = require('express');
 const { route } = require('express/lib/application');
+const task = require('../models/task');
 const router = express.Router();
 const Task = require('../models/task');
 
@@ -25,8 +26,8 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
     const task = new Task({
-        task: req.body.task,
-        description: req.body.description
+        description: req.body.description,
+        completed: req.body.completed
     })
 
     try {
@@ -38,25 +39,25 @@ router.post('/', async (req, res) => {
     }
 })
 
-router.patch('/:id', async(req, res) =>{
-    try{
+router.patch('/:id', async (req, res) => {
+    try {
         const task = await Task.findById(req.params.id);
-        task.description = req.body.description
+        task.completed = req.body.completed
         const a1 = await task.save();
         res.json(a1);
-    }catch(err){
+    } catch (err) {
         res.send('Error')
     }
 })
 
 
-router.delete('/:id', async(req, res) =>{
-    try{
+router.delete('/:id', async (req, res) => {
+    try {
         const task = await Task.findById(req.params.id);
-        task.description = req.body.description
+        task.completed = req.body.completed
         const a1 = await task.delete();
         res.json(a1);
-    }catch(err){
+    } catch (err) {
         res.send('Error')
     }
 })

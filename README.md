@@ -12,13 +12,13 @@ There are 4 localhost calls on postman which are as follows.
 
 
 for New Entry:(POST request on postman)
-1. http://localhost:3000/tasks/
+http://localhost:3000/tasks/
 
 for Reading any Entry:(GET request on postman)
-2. http://localhost:3000/tasks/id
+http://localhost:3000/tasks/id
 
 for Updating Entry:(PATCH request on postman)
-3. http://localhost:3000/tasks/id with the JSON data updations
+http://localhost:3000/tasks/id with the JSON data updations
 
 for Deleting Entry:(DELETE request on postman)
-4. http://localhost:3000/tasks/id 
+http://localhost:3000/tasks/id 
